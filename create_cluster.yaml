@@ -1,0 +1,16 @@
+apiVersion: run.tanzu.vmware.com/v1alpha1
+kind: TanzuKubernetesCluster
+metadata:
+  name: vmug-cluster-01
+spec:
+  topology:
+    controlPlane:
+      count: 1
+      class: best-effort-xsmall
+      storageClass: k8s-iscsi
+    workers:
+      count: 2
+      class: best-effort-xsmall
+      storageClass: k8s-iscsi
+  distribution:
+    version: v1.21.6
