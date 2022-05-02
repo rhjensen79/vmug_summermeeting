@@ -1,7 +1,7 @@
 apiVersion: run.tanzu.vmware.com/v1alpha1
 kind: TanzuKubernetesCluster
 metadata:
-  name: vmug-cluster-01
+  name: vmug-01
 spec:
   topology:
     controlPlane:
